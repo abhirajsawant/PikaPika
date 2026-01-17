@@ -1,0 +1,33 @@
+/* universal selector */
+* {
+    color: wheat;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* element selector */
+/* h1{
+color: #000000;
+} 
+p{
+color: red;
+} */
+
+/* class selector */
+.pr{
+    color: cadetblue;
+}
+.prfont{
+    font-size:32px;
+}
+
+/* ID selector, it must be unique*/
+#id1{
+    color: rgba(255, 0, 0, 0.938);
+}
+
+/* selector list, use comma to merge any file, class, id etc */
+.class3 , .clas5 , .class9 {
+    color: chocolate;
+}

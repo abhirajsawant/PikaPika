@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input forms </title>
+</head>
+<body>
+    <form method="get" >
+        <fieldset>
+            <legend>user detAILS</legend>
+            <label for="username">enter your username</label>
+            <input type="text" name="username" id="username" value="name" autofocus >
+            <!-- value help to put something as default ,autofocus  makes thing already selected after refreshing-->
+
+            <br>
+            <label for="useremail">enter your email</label>
+            <input type="text" name="useremail" id="useremail" placeholder="first@last.com">
+            <!-- placeholder is a shadow text to give hint to the user -->
+            <br>
+            <label for="userpassword">enter your password</label>
+            <input type="password" name="userpassword" id="userpassword">
+            <br>
+            Gender:<br>
+            <label for="male">mail</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <br>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <br>
+            <label for="transgender">transgender</label>
+            <input type="radio" name="gender" id="transgender" value="transgender">
+            <br>
+            <label for="others">others</label>
+            <input type="radio" name="gender" id="others" value="others">
+            <br>
+            <label for="country">enter your country</label>
+            <input type="text" name="country" id="country" value="india" readonly disabled >
+            <!-- readonly makes thing not changable, 
+             disabbled makes the text light-->
+            <br>
+            <label for="age">age</label>
+            <input type="number" min="0" max="99" name="age" id="age" value="age">
+            <br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

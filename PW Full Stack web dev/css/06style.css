@@ -1,0 +1,29 @@
+* {background-color: rgb(159, 220, 245);}
+h1 {
+    color: blanchedalmond;
+}
+
+/* descendent selector */
+main p n {
+    color: rgb(58, 7, 239);
+}
+
+/* child selector */
+h1 > p {color: aquamarine;}
+
+/* adjacent siubling select , selecting others but not yourself, usae  + sign to use */
+section + p{
+    color: violet;
+}
+/* general sibling select , selecting others but not yourself, usae  ~ sign to use, it will be applied to all p below section  whenever they come, but in alternate its only applied to the one upcoming first , no effect to rest */ 
+section ~ p{
+    color: rgb(105, 30, 218);
+}
+
+/* attribute selector, is written on the [] , not used as muct , better to use class or something else */
+[target="_blank"]{
+    color: aliceblue;
+}
+
+/* attribute~="value" */
+[alt="hjghgjghj"]{background-color: #c23bce;}

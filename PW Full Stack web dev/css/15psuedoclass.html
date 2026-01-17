@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo class</title>
+    <style>
+        .hover:hover{
+            background-color: #808080;
+            color: aqua;
+        }
+        input:focus{
+            font-size: 33px;
+            color: pink;
+            font-variant:small-caps  ;
+        }
+        .a123:hover {
+            color: green;
+        }
+        a:active{
+            color: red;
+        }
+        a:visited{
+            color:palevioletred
+        }
+        a:nth-child(2n +1 ){
+            background-color: yellow;
+        }
+
+        p::after{
+            content: "-huiii";
+            color: aquamarine;
+        }
+        p::before{
+            content: "-huiii";
+            color: aquamarine;
+        }
+        p::selection{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <p class="hover">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem commodi amet quod soluta ex sunt!</p>
+    <input type="text">
+    <nav>
+    <a class="a123" href="https://www.geeksforgeeks.org/">geeksforgeeks</a>
+    <a class="a123" href="https://www.geeksforgeeks.org/">geeksforgeeks</a>
+    <a class="a123" href="https://www.geeksforgeeks.org/">geeksforgeeks</a>
+    <a class="a123" href="https://www.geeksforgeeks.org/">geeksforgeeks</a>
+    <a class="a123" href="https://www.geeksforgeeks.org/">geeksforgeeks</a>
+    </nav>
+    
+</body>
+</html>

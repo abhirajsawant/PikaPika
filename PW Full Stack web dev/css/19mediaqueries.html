@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        body{background-color: red;
+        }
+        div{
+            font-size: xx-large;
+            text-align: center;
+        }
+        div::after{content: "welcomeeeeeeeeee";}
+
+        @media (max-width: 400px){
+            body{background-color: pink;}
+            div::after{content: "pinkooooo"}
+        }
+        @media (400px<width<600px){
+            body{background-color: yellowgreen;}
+        }
+        /* @media (min-width:400px) and (max-width:600px){
+            body{background-color: yellowgreen;}
+        } */
+        @media (min-width: 600px){
+            body{background-color: blue;}
+            div::after{content: "wooooooo"}
+        }@media (min-width: 800px){
+            body{background-color: aqua;}
+            div::after{content: "wjoooooo"}
+        }@media (min-width: 900px){
+            body{background-color: black;
+            color: white;}
+            div::after{content: "hbyuggbyboooooo"}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <img src="Screenshot (45).png", width="400px" alt="general">
+</body>
+</html>

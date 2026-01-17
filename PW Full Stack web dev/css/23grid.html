@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-columns: repeat(3,1fr); */
+            /* grid-template-columns: minmax(10px,2fr)  minmax(10px,1fr) minmax(10px,1fr); */
+            grid-template-rows:500px 1fr 1fr;
+        }
+        .box{
+            /* height: 100px;
+            width: 10px; */
+            margin: 5px;
+        }
+        .box1{
+            background-color: pink;
+            /* align-self: center; */
+            /* justify-self: center; */
+            border: 2px solid black;
+        }
+        .box2{
+            background-color: rgb(238, 255, 192);
+        }
+        .box3{
+            background-color: rgb(192, 250, 255);
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid System -->
+    <div class="container">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+    </div>
+</body>
+</html>

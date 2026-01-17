@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            animation-name: colorchange ;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate-reverse; */
+        }
+        #ease{
+            animation-timing-function: ease;
+        }#linear{
+            animation-timing-function: linear;
+        }#ease-in{
+            animation-timing-function: ease-in;
+        }#ease-in-out{
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes colorchange { 
+            0%{
+                background-color: red;
+                top: 0px;
+                left: 0px;
+            }
+            50%{
+                background-color: blue;
+                top: 40px;
+                left: 250px;
+            }
+            100%{
+                background-color: pink;
+                top: 50px;
+                left: 300px;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div id="ease">ease</div>
+    <div id="linear">linear</div>
+    <div id="ease-in">ease in</div>
+    <div id="ease-in-out">ease-in-out</div>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
