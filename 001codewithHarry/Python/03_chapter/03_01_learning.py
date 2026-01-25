@@ -2,7 +2,7 @@
 # we can't perform any change in a string
 general_string = "Jerry\\"
 print(general_string)
-# remember that there is no charater (char) data type in Python
+# remember that there is no charater (char) data type in Python like in C
 
 # topic 01 String Slicing
 
@@ -33,6 +33,6 @@ print(len(ex01))
 print(ex01.endswith("by by")) #will check the string ending
 print(ex01.count("i")) # will count occurance of i
 print(ex01.capitalize())#capatilise 1st alphabet
-print(ex01.find("is"))# return 1st occ. index
+print(ex01.find("is"))# return 1st occured index
 print(ex01.find("22"))
 print(ex01.replace("a","the").replace("22", "333"))

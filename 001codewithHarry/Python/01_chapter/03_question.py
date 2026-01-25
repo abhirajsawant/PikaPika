@@ -1,8 +1,8 @@
 #user will choose two numbers 
 print("firrst value")
-value1 = int(input())
+value1 = int(input("Choose a num"))
 print("second value")
-value2 = int(input())
+value2 = int(input("choose a num"))
 
 #operations
 mul = value1 * value2

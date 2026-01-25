@@ -1,4 +1,4 @@
-# python automatically identified the data type(int,float,string,booleans)
+# python automatically identified the data type(int,float,string,booleans,complex)
 # char data type is not available in Python
 
 
@@ -13,12 +13,13 @@ var1 = 32
 var2 = "jerry"
 var3 = True 
 var4 = 9.33
-print(type(var1),"\n",type(var2),"\n",type(var3),"\n",type(var4))
+var5 = 6 +8j
+print(type(var1),"\n",type(var2),"\n",type(var3),"\n",type(var4),"\n",type(var5))
 
 # how to get input from the user
 # "input" generally take 'string' as the data type
 
-print("")
+print("") # for spaces
 userip01 = input("write the string : ")
 print(f"what you wrote :{userip01}") 
 
